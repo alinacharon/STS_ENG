@@ -56,17 +56,15 @@ def calculate_average_rating(column):
 results = {}
 
 for i in range(len(attractiveness_columns)):
-    sound_number = extract_sound_number(attractiveness_columns[i])
-    if sound_number:
-        sound_name = f"Sound {sound_number}"
-        attractiveness_col = attractiveness_columns[i]
-        keyword_col = keyword_columns[i]
+    sound_name = f"Sound {i + 1}"  # Изменено для использования порядка колонок
+    attractiveness_col = attractiveness_columns[i]
+    keyword_col = keyword_columns[i]
 
-        results[sound_name] = {
-            "Average Attractiveness Rating": calculate_average_rating(attractiveness_col),
-            "Rating Distribution": get_full_rating_list(attractiveness_col),
-            "All Keywords": get_all_keywords(keyword_col)
-        }
+    results[sound_name] = {
+        "Average Attractiveness Rating": calculate_average_rating(attractiveness_col),
+        "Rating Distribution": get_full_rating_list(attractiveness_col),
+        "All Keywords": get_all_keywords(keyword_col)
+    }
 
 
 # Step 4: Save the results to a CSV file
