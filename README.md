@@ -15,6 +15,16 @@ Avant de commencer, assurez-vous d'avoir installé Python sur votre machine. Vou
 3. Suivez les instructions d'installation pour votre système d'exploitation (Windows, macOS, Linux).
 4. Assurez-vous de cocher l'option "Add Python to PATH" lors de l'installation.
 
+### Installation de pip
+
+Pip est généralement inclus avec les versions récentes de Python. Si vous devez l'installer manuellement, suivez ces étapes :
+
+1. Téléchargez le script `get-pip.py` depuis [ce lien](https://bootstrap.pypa.io/get-pip.py).
+2. Ouvrez un terminal ou une invite de commande.
+3. Exécutez la commande suivante :
+   ```bash
+   python get-pip.py
+   ```
 
 ## Clonage du dépôt
 
